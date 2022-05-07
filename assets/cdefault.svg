@@ -18,8 +18,8 @@
 <path d="M13 12H14V16H13V12Z" fill="black"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3H3V10H2V11H3V19H5H9V18H10V17H12V16H13V12H12V11H11V10H10V9H9V8H8V7H7V6H6V5H5V4H4V3Z" fill="black"/>
 <path d="M5 3H4V4H5V3Z" fill="black"/>
-<rect x="8" y="16" width="2" height="4" fill="#4D674D"/>
-<rect x="9" y="19" width="2" height="3" fill="#4D674D"/>
+<rect x="8" y="16" width="2" height="4" fill="#445744"/>
+<rect x="9" y="19" width="2" height="3" fill="#445744"/>
 <path d="M2 2H4V4H5V5H6V6H7V7H8V8H9V9H10V10H11V11H12V15H11V16H9V17H8V18H4H2V10H1V9H2V2Z" fill="#69926A"/>
 <path d="M1 0H2V1H3V2H2V9V10V16H3V18H2V17H1V15H0V8H1V0Z" fill="#476348"/>
 <path d="M4 17H6V19H3V18H4V17Z" fill="#476348"/>
@@ -27,7 +27,13 @@
 <rect x="11" y="15" width="1" height="1" fill="#476348"/>
 <rect x="6" y="9" width="1" height="1" fill="#476348"/>
 <rect x="5" y="8" width="1" height="1" fill="#476348"/>
+<rect x="4" y="6" width="1" height="1" fill="#476348"/>
 <path d="M8 12H9V13H10V14H9V15H8V12Z" fill="#476348"/>
+<rect x="6" y="10" width="1" height="2" fill="#98CB99"/>
+<rect x="7" y="11" width="1" height="2" fill="#98CB99"/>
+<rect x="4" y="8" width="1" height="1" fill="#98CB99"/>
+<rect x="5" y="9" width="1" height="1" fill="#98CB99"/>
+<rect x="4" y="7" width="1" height="1" fill="#98CB99"/>
 <rect x="4" y="3" width="1" height="1" fill="#98CB99"/>
 <rect x="5" y="4" width="1" height="1" fill="#98CB99"/>
 <rect x="6" y="5" width="1" height="1" fill="#98CB99"/>
