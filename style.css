@@ -84,6 +84,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     transform: scale(1);
+    transform: translateY(-64px);
     transition: 0.5s;
     padding: 12px 48px;
 
@@ -96,28 +97,28 @@ body {
 }
 
 @keyframes fadeIn {
-    0% {opacity:0; transform: translateY(64px);}
-    100% {opacity:1; transform: translateY(0px);}
+    0% {opacity:0; transform: translateY(0px);}
+    100% {opacity:1; transform: translateY(-64px);}
   }
   
   @-moz-keyframes fadeIn {
-    0% {opacity:0; transform: translateY(64px);}
-    100% {opacity:1; transform: translateY(0px);}
+    0% {opacity:0; transform: translateY(0px);}
+    100% {opacity:1; transform: translateY(-64px);}
   }
   
   @-webkit-keyframes fadeIn {
-    0% {opacity:0; transform: translateY(64px);}
-    100% {opacity:1; transform: translateY(0px);}
+    0% {opacity:0; transform: translateY(0px);}
+    100% {opacity:1; transform: translateY(-64px);}
   }
   
   @-o-keyframes fadeIn {
-    0% {opacity:0; transform: translateY(64px);}
-    100% {opacity:1; transform: translateY(0px);}
+    0% {opacity:0; transform: translateY(0px);}
+    100% {opacity:1; transform: translateY(-64px);}
   }
   
   @-ms-keyframes fadeIn {
-    0% {opacity:0; transform: translateY(64px);}
-    100% {opacity:1; transform: translateY(0px);}
+    0% {opacity:0; transform: translateY(0px);}
+    100% {opacity:1; transform: translateY(-64px);}
   }
 
 #content {
