@@ -2,6 +2,8 @@
 
 html {
 	scroll-behavior: smooth;
+    overflow-y: overlay;
+    overflow-x: overlay;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -26,22 +28,31 @@ html {
 .noSelect:focus {outline: none !important;}
 
 ::-webkit-scrollbar-button {
-    display: none;
+    background: transparent;
+    height: 0px;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    display: none;
+    margin: 24px 0px;
+    width: 24px;
+    z-index: 1002;
+    padding: 8px;
 }
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: none;
+    background: transparent;
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: none;
+    background: #69926a;
+    border-color: #fff8ef;
+    border-radius: 24px 0px 0px 24px;
+    height: 1px;
+    border-style: solid;
+    border-width: 4px 0px 4px 4px;
 }
   
 /* Handle on hover */
@@ -62,6 +73,96 @@ html {
     text-decoration: underline;
     color: #C2518E;
 }
+
+.woo {
+    animation: wooo 1s linear infinite;
+    -webkit-animation: wooo 1s linear infinite;
+    -moz-animation: wooo 1s linear infinite;
+    -o-animation: wooo 1s linear infinite;
+    -ms-animation: wooo 1s linear infinite;
+    color: #000;
+    font-size: 3rem;
+}
+
+@keyframes wooo {
+    0% {
+        color: red;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        color: red;
+        filter: hue-rotate(359deg);
+    }
+  }
+  
+  @-moz-keyframes wooo {
+    0% {
+        color: red;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        color: red;
+        filter: hue-rotate(359deg);
+    }
+  }
+  
+  @-webkit-keyframes wooo {
+    0% {
+        color: red;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        color: red;
+        filter: hue-rotate(359deg);
+    }
+  }
+  
+  @-o-keyframes wooo {
+    0% {
+        color: red;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        color: red;
+        filter: hue-rotate(359deg);
+    }
+  }
+  
+  @-ms-keyframes wooo {
+    0% {
+        color: red;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        color: red;
+        filter: hue-rotate(359deg);
+    }
+  }
 
 .navigate {
     position: sticky;
@@ -102,7 +203,7 @@ body {
     mix-blend-mode: multiply;
     pointer-events: none;
     opacity: 0.5;
-    z-index: 999;
+    z-index: 9999;
   }
 
 #time {
@@ -213,7 +314,51 @@ p {
     margin: 24px 0px;
 }
 
+#scroll-list {
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 1001;
+    margin-right: 12px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #69926a;
+}
+
+.line {
+    width: 12px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: rgba(144, 188, 145, 0.6);
+}
+
+.wide {
+    width: 24px;
+    background-color: #69926a;
+}
+
 @media screen and (max-aspect-ratio: 2/3) {
+
+    #scroll-list {
+        display: none;
+    }
+
+    .woo {
+        font-size: 6rem;
+    }
 
     .navigate {
         width: 90vw;
